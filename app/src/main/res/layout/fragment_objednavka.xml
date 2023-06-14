@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragmenty.ObjednavkaFragment">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/zapl_hotovost"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:background="@color/green"
+        android:text="@string/zaplati_v_hotovosti"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/zapl_kartou"
+        app:layout_constraintTop_toTopOf="@+id/zapl_kartou"
+        tools:ignore="TextSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/zmazat_obj"
+        android:layout_width="198dp"
+        android:layout_height="51dp"
+        android:background="#F44336"
+        android:text="@string/zmaza_objedn_vku"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zapl_kartou"
+        app:layout_constraintVertical_bias="0.307"
+        tools:ignore="TextSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/zapl_kartou"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/green"
+        android:text="@string/zaplati_kartou"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewPolozky"
+        tools:ignore="TextSizeCheck" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPolozky"
+        android:layout_width="350dp"
+        android:layout_height="410dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:scrollIndicators="bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stol_obj" />
+
+    <TextView
+        android:id="@+id/stol_obj"
+        android:layout_width="133dp"
+        android:layout_height="45dp"
+        android:background="@drawable/oramovanie"
+        android:gravity="center"
+        android:text="@string/n_zov_stola"
+        android:textColor="@color/gold"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067"
+        tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/suma_zobr"
+        android:layout_width="87dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/_0_eur"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerViewPolozky"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/stol_obj"
+        app:layout_constraintTop_toTopOf="@+id/stol_obj"
+        tools:ignore="TextSizeCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

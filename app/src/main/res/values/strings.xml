@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">iObjednaj</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_100_00">100.00</string>
+    <string name="denny_vklad">DENNÝ VKLAD</string>
+    <string name="logo_kaviarne">LOGO_KAVIARNE</string>
+    <string name="potvrdi">POTVRDIŤ</string>
+    <string name="denn_uz_vierka">DENNÁ UZÁVIERKA</string>
+    <string name="_0_00">0.00 €</string>
+    <string name="stol">Stôl 1</string>
+    <string name="zmaza_objedn_vku">ZMAZAŤ OBJEDNÁVKU</string>
+    <string name="zaplati_kartou">ZAPLATIŤ KARTOU</string>
+    <string name="zaplati_v_hotovosti">ZAPLATIŤ V HOTOVOSTI</string>
+    <string name="nazov_polo_ky">NAZOV POLOŽKY</string>
+    <string name="n_zov_sekcie">NÁZOV SEKCIE</string>
+    <string name="_0">0</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="vklad">VKLAD</string>
+    <string name="hotovos">HOTOVOSŤ</string>
+    <string name="karty">KARTY</string>
+    <string name="spolu">SPOLU</string>
+    <string name="_0_0">0.0 €</string>
+    <string name="_0_eur">0.0 €</string>
+    <string name="denn_preh_ad">DENNÝ PREHĽAD</string>
+    <string name="vykonat">VYKONAŤ</string>
+    <string name="zadajte_v_ku_vkladu">Zadajte výšku vkladu</string>
+    <string name="n_zov_stola">NÁZOV STOLA</string>
+</resources>

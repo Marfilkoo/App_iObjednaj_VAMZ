@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragmenty.UzavierkaFragment">
+
+    <TextView
+            android:id="@+id/prehlad"
+            android:layout_width="304dp"
+            android:layout_height="55dp"
+            android:background="@color/emerald"
+            android:gravity="center"
+            android:text="@string/denn_preh_ad"
+            android:textColor="@color/gold"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.117"
+            tools:ignore="TextSizeCheck" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prehlad">
+
+        <TextView
+                android:id="@+id/suma_spolu"
+                android:layout_width="120dp"
+                android:layout_height="55dp"
+                android:background="@drawable/oramovanie_cena"
+                android:gravity="center"
+                android:text="@string/_0_eur"
+                android:textColor="@color/gold"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/suma_karty"
+                app:layout_constraintTop_toTopOf="@+id/spolu"
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+        <TextView
+                android:id="@+id/suma_hotovost"
+                android:layout_width="120dp"
+                android:layout_height="55dp"
+                android:background="@drawable/oramovanie_cena"
+                android:gravity="center"
+                android:text="@string/_0_eur"
+                android:textColor="@color/gold"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/den_vklad_suma"
+                app:layout_constraintTop_toTopOf="@+id/hotovost"
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+        <TextView
+                android:id="@+id/spolu"
+                android:layout_width="184dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/oramovanie_text"
+                android:gravity="center"
+                android:text="@string/spolu"
+                android:textColor="@color/gold"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vklad"
+                app:layout_constraintTop_toBottomOf="@+id/karty"
+                tools:ignore="TextContrastCheck" />
+
+        <TextView
+                android:id="@+id/karty"
+                android:layout_width="184dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/oramovanie_text"
+                android:gravity="center"
+                android:text="@string/karty"
+                android:textColor="@color/gold"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vklad"
+                app:layout_constraintTop_toBottomOf="@+id/hotovost"
+                tools:ignore="TextContrastCheck" />
+
+        <TextView
+                android:id="@+id/vklad"
+                android:layout_width="184dp"
+                android:layout_height="55dp"
+                android:background="@drawable/oramovanie_text"
+                android:gravity="center"
+                android:text="@string/denny_vklad"
+                android:textColor="@color/gold"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+        <TextView
+                android:id="@+id/hotovost"
+                android:layout_width="184dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/oramovanie_text"
+                android:gravity="center"
+                android:text="@string/hotovos"
+                android:textColor="@color/gold"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vklad"
+                app:layout_constraintTop_toBottomOf="@+id/vklad"
+                tools:ignore="TextContrastCheck" />
+
+        <TextView
+                android:id="@+id/suma_karty"
+                android:layout_width="120dp"
+                android:layout_height="55dp"
+                android:background="@drawable/oramovanie_cena"
+                android:gravity="center"
+                android:text="@string/_0_eur"
+                android:textColor="@color/gold"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/suma_hotovost"
+                app:layout_constraintTop_toTopOf="@+id/karty"
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+        <TextView
+                android:id="@+id/den_vklad_suma"
+                android:layout_width="120dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/oramovanie_cena"
+                android:gravity="center"
+                android:text="@string/_0_eur"
+                android:textColor="@color/gold"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/vklad"
+                app:layout_constraintTop_toTopOf="@+id/vklad"
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/vykonat"
+            android:layout_width="202dp"
+            android:layout_height="64dp"
+            android:background="@drawable/oramovanie_button"
+            android:text="@string/vykonat"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintVertical_bias="0.389"
+            tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

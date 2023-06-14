@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/uzavierka"
+            android:layout_width="141dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="52dp"
+            android:background="@color/emerald"
+            android:text="@string/denn_uz_vierka"
+            android:textColor="@color/gold"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/myRecyclerView"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="TextSizeCheck" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/myRecyclerView"
+            android:layout_width="365dp"
+            android:layout_height="535dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.196" />
+
+        <TextView
+            android:id="@+id/vklad_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/vklad"
+            android:textColor="@color/gold"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/uzavierka"
+            app:layout_constraintTop_toBottomOf="@+id/myRecyclerView"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/hotovost_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hotovos"
+            android:textColor="@color/gold"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/vklad_text"
+            app:layout_constraintTop_toBottomOf="@+id/vklad_text"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/karty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/karty"
+            android:textColor="@color/gold"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/hotovost_text"
+            app:layout_constraintTop_toBottomOf="@+id/hotovost_text"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spolu"
+            android:textColor="@color/gold"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/karty_text"
+            app:layout_constraintTop_toBottomOf="@+id/karty_text"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/suma_vklad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0_0"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.72"
+            app:layout_constraintStart_toEndOf="@+id/vklad_text"
+            app:layout_constraintTop_toTopOf="@+id/vklad_text" />
+
+        <TextView
+            android:id="@+id/hotovst_suma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0_eur"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/suma_vklad"
+            app:layout_constraintTop_toBottomOf="@+id/suma_vklad" />
+
+        <TextView
+            android:id="@+id/karty_suma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0_eur"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/hotovst_suma"
+            app:layout_constraintTop_toBottomOf="@+id/hotovst_suma" />
+
+        <TextView
+            android:id="@+id/spolu_transakcie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0_eur"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/karty_suma"
+            app:layout_constraintTop_toBottomOf="@+id/karty_suma" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

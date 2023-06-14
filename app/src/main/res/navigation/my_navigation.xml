@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/uvodnyFragment">
+
+    <fragment
+        android:id="@+id/uvodnyFragment"
+        android:name="com.example.iobjednaj.fragmenty.UvodnyFragment"
+        android:label="fragment_uvodny"
+        tools:layout="@layout/fragment_uvodny" >
+        <action
+            android:id="@+id/action_uvodnyFragment_to_stolyFragment"
+            app:destination="@id/stolyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/stolyFragment"
+        android:name="com.example.iobjednaj.fragmenty.StolyFragment"
+        android:label="fragment_stoly"
+        tools:layout="@layout/fragment_stoly" >
+
+        <action
+            android:id="@+id/action_stolyFragment_to_objednavkaFragment"
+            app:destination="@id/objednavkaFragment" />
+        <action
+            android:id="@+id/action_stolyFragment_to_uzavierkaFragment"
+            app:destination="@id/uzavierkaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/objednavkaFragment"
+        android:name="com.example.iobjednaj.fragmenty.ObjednavkaFragment"
+        android:label="fragment_objednavka"
+        tools:layout="@layout/fragment_objednavka" >
+        <action
+            android:id="@+id/action_objednavkaFragment_to_stolyFragment"
+            app:destination="@id/stolyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uzavierkaFragment"
+        android:name="com.example.iobjednaj.fragmenty.UzavierkaFragment"
+        android:label="fragment_uzavierka"
+        tools:layout="@layout/fragment_uzavierka" >
+        <action
+            android:id="@+id/action_uzavierkaFragment_to_uvodnyFragment"
+            app:destination="@id/uvodnyFragment"
+                app:popUpTo="@id/uvodnyFragment"
+                app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>
